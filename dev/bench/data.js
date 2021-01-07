@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1609980918040,
+  "lastUpdate": 1609980936762,
   "repoUrl": "https://github.com/phlip9/tokio",
   "entries": {
     "sync_semaphore": [
@@ -299,6 +299,90 @@ window.BENCHMARK_DATA = {
             "name": "uncontented_unbounded",
             "value": 769825,
             "range": "± 91446",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "liaoymxsdl@sina.com",
+            "name": "Rust大闸蟹",
+            "username": "baoyachi"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e42317b072c5240fe190c0a8708cd24bb4a4eb08",
+          "message": "chore: remove macro_rules semicolon (#3381)\n\nfix build warning",
+          "timestamp": "2021-01-06T15:46:37+09:00",
+          "tree_id": "afddb1695c354a4f98712745b23363ef96774bc8",
+          "url": "https://github.com/phlip9/tokio/commit/e42317b072c5240fe190c0a8708cd24bb4a4eb08"
+        },
+        "date": 1609980935731,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contention_bounded",
+            "value": 6786753,
+            "range": "± 2997987",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_bounded_full",
+            "value": 6635060,
+            "range": "± 2000838",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_unbounded",
+            "value": 6165944,
+            "range": "± 2348584",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_000_medium",
+            "value": 620,
+            "range": "± 8",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_medium",
+            "value": 620,
+            "range": "± 6",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_1_medium",
+            "value": 621,
+            "range": "± 10",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_large",
+            "value": 85525,
+            "range": "± 3980",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_medium",
+            "value": 1365,
+            "range": "± 94",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_bounded",
+            "value": 1140106,
+            "range": "± 8440",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_unbounded",
+            "value": 860149,
+            "range": "± 406142",
             "unit": "ns/iter"
           }
         ]
