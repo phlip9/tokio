@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1609980936762,
+  "lastUpdate": 1609980944861,
   "repoUrl": "https://github.com/phlip9/tokio",
   "entries": {
     "sync_semaphore": [
@@ -213,6 +213,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 578,
             "range": "± 66",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "liaoymxsdl@sina.com",
+            "name": "Rust大闸蟹",
+            "username": "baoyachi"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e42317b072c5240fe190c0a8708cd24bb4a4eb08",
+          "message": "chore: remove macro_rules semicolon (#3381)\n\nfix build warning",
+          "timestamp": "2021-01-06T15:46:37+09:00",
+          "tree_id": "afddb1695c354a4f98712745b23363ef96774bc8",
+          "url": "https://github.com/phlip9/tokio/commit/e42317b072c5240fe190c0a8708cd24bb4a4eb08"
+        },
+        "date": 1609980943809,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 1035,
+            "range": "± 10",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 15738,
+            "range": "± 4231",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 1046,
+            "range": "± 4",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 14988,
+            "range": "± 3845",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 594,
+            "range": "± 44",
             "unit": "ns/iter"
           }
         ]
