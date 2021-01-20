@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611171835293,
+  "lastUpdate": 1611171839577,
   "repoUrl": "https://github.com/phlip9/tokio",
   "entries": {
     "sync_semaphore": [
@@ -107,6 +107,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 1140,
             "range": "± 5",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alice@ryhl.io",
+            "name": "Alice Ryhl",
+            "username": "Darksonn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cc0911aa645cbaf5dee5b3d51efcfbe703159902",
+          "message": "net: update datagram docs on splitting (#3448)",
+          "timestamp": "2021-01-20T16:28:57+01:00",
+          "tree_id": "6a9606182d62c927932ebdd5361899a12573b9b5",
+          "url": "https://github.com/phlip9/tokio/commit/cc0911aa645cbaf5dee5b3d51efcfbe703159902"
+        },
+        "date": 1611171838506,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 15844,
+            "range": "± 4051",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 1023,
+            "range": "± 61",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 628,
+            "range": "± 70",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 15903,
+            "range": "± 5693",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 1088,
+            "range": "± 64",
             "unit": "ns/iter"
           }
         ]
