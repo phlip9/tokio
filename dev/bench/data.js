@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611171839577,
+  "lastUpdate": 1611171843850,
   "repoUrl": "https://github.com/phlip9/tokio",
   "entries": {
     "sync_semaphore": [
@@ -259,6 +259,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 19722574,
             "range": "± 3111800",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alice@ryhl.io",
+            "name": "Alice Ryhl",
+            "username": "Darksonn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cc0911aa645cbaf5dee5b3d51efcfbe703159902",
+          "message": "net: update datagram docs on splitting (#3448)",
+          "timestamp": "2021-01-20T16:28:57+01:00",
+          "tree_id": "6a9606182d62c927932ebdd5361899a12573b9b5",
+          "url": "https://github.com/phlip9/tokio/commit/cc0911aa645cbaf5dee5b3d51efcfbe703159902"
+        },
+        "date": 1611171838723,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 165562,
+            "range": "± 3074",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 628994,
+            "range": "± 34431",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4757163,
+            "range": "± 1132630",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 18421789,
+            "range": "± 2302749",
             "unit": "ns/iter"
           }
         ]
